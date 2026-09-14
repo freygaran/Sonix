@@ -1,0 +1,31 @@
+# Server
+server.port=8081
+
+# Spring
+spring.application.name=Sonix
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/sonix_posqtgresql
+postgresql://sonix_posqtgresql_user:DFQv6JEhAyPUU0Peu4eWj8SlfCgHO5a9@dpg-dak48ovf3r2c73c16o5g-a.oregon-postgres.render.com/sonix_posqtgresql
+spring.datasource.username=sonix_posqtgresql_user
+spring.datasource.password=DFQv6JEhAyPUU0Peu4eWj8SlfCgHO5a9
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+springdoc.show-actuator=true
+
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.properties.hibernate.format_sql=true
+
+# Thymeleaf
+spring.thymeleaf.prefix=classpath:/templates/
+spring.thymeleaf.suffix=.html
+spring.thymeleaf.mode=HTML
+spring.thymeleaf.encoding=UTF-8
+spring.thymeleaf.servlet.content-type=text/html
+spring.thymeleaf.cache=false
+
+# Static resources
+spring.web.resources.static-locations=classpath:/static/,file:${upload.dir}
+
+# File upload
+upload.dir=${user.home}/sonic-uploads/
